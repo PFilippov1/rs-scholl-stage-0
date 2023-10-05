@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio-player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../audio-player/assets/img/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <main>
+        <div class="wrapper">
+            <div class="player">
+                <div class="image-song__wrapper">
+                    <img class="image-song" src="../audio-player/assets/img/lemonade.png" alt="song image">
+                </div>
+                <div class="controls__wrapper">
+                    <div class="button play-button"><img class="btn-img" src="../audio-player/assets/svg/play.png"
+                            alt="play button">
+                    </div>
+                    <div class="title__wrapper">
+                        <span class="artist">Beyonce</span>
+                        <span class="song">Don`t hurt yourself</span>
+                    </div>
+                    <audio class="audio" src="../audio-player/assets/audio/beyonce.mp3"></audio>
+                    <div class="arrow__wrapper">
+                        <div class="button prev"><img class="prev" src="../audio-player/assets/svg/backward.png"></img>
+                        </div>
+                        <div class="button next"><img class="next" src="../audio-player/assets/svg/forward.png"></img>
+                        </div>
+
+                        <div class="volume-container">
+                            <div class="volume-button">
+                                <div class="volume icono-volumeMedium"></div>
+                            </div>
+
+                            <div class="volume-slider">
+                                <div class="volume-percentage"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress__container">
+                        <div class="full-time">1</div>
+                        <div class="progress">
+                            <div class="progress-line"></div>
+                        </div>
+                        <div class="played-time">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="profile-information">
+            <span class="year-footer">2023</span>
+            <a class="rs-school-footer" href="https://rs.school/js-stage0"><img
+                    src="../audio-player/assets/svg/rs_school_js.svg"></img></a>
+
+            <a class="github-footer" href="https://github.com/PFilippov1/rsschool-cv"><img
+                    src="../audio-player/assets/img/github-mark.png"></img></a>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

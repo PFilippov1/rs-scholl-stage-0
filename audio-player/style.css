@@ -1,0 +1,206 @@
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "sans-serif";
+}
+body {
+  width: 100wv;
+  height: 100vh;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+  backdrop-filter: blur(5px);
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.player {
+  display: flex;
+  width: 30%;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.5), 0 0 0 2px rgb(48, 47, 47),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  margin-bottom: 5%;
+}
+.image-song__wrapper {
+  width: 100%;
+  /* height: 25rem; */
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.image-song {
+  width: 100%;
+  height: 100%;
+}
+.controls__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  /* height: 40%; */
+  align-content: center;
+  align-items: center;
+  background-color: #5e645f;
+}
+.button img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.play-button img {
+  width: 3rem;
+  height: 3rem;
+}
+.title__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 8.125rem;
+}
+.artist {
+  font-size: 1rem;
+  color: #e0f40a;
+  text-transform: capitalize;
+  /* width: 100px; */
+}
+.song {
+  font-size: 1rem;
+  color: #fff;
+  /* text-transform: capitalize; */
+  /* width: 100px; */
+}
+.arrow__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.prev img {
+  width: 2rem;
+  height: 2rem;
+  color: #000;
+}
+.next img {
+  width: 2rem;
+  height: 2rem;
+}
+.progress__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5e645f;
+}
+.full-time {
+  font-size: 0.7rem;
+  color: #e0f40a;
+  text-align: end;
+  font-size: 0.8rem;
+  display: block;
+  width: 90%;
+}
+.progress {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 8px;
+  border-radius: 5px;
+  border: 2px black;
+  cursor: pointer;
+  background-color: #9ba39c;
+}
+.progress-line {
+  border: 2px black;
+  background-color: black;
+  /* width: 100px; */
+  height: 6px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.played-time {
+  font-size: 0.8rem;
+  color: #ecede0;
+  text-align: start;
+  font-size: 0.7rem;
+  display: block;
+  width: 90%;
+}
+
+footer {
+  color: #fff;
+  background-color: #5e645f;
+  display: flex;
+  width: 100vw;
+  position: fixed;
+  bottom: 0vh;
+}
+.profile-information {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.year-footer {
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.rs-school-footer img {
+  width: 4rem;
+  height: 3rem;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.github-footer img {
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.progress-line::-webkit-slider-thumb {
+  /* width: 20px;
+  height: 20px; */
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #000;
+}
+
+@media (max-width: 400px), screen and (orientation: portrait) {
+  .player {
+    width: 80%;
+  }
+}
