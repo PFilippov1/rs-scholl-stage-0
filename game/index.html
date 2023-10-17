@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple-game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../game/assets/img/favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header__container">
+            <h1>Very Simple Game</h1>
+           
+            <div class="record__wrapper">
+                <div class="rescue-score">best scores
+                    <div class="value"></div>
+                </div>
+                <button class="start">start game</button>
+                <div class="player-time">players time    
+                    <div class="time"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="game__wrapper">
+            <div id="mario"></div>
+            <div id="princess">
+                <div id="rescue"></div>
+            </div>
+            <div id="boser"></div>
+        </div>
+        <!-- <button class="start">start game</button> -->
+
+        <div class="modal">
+            <a href=""><img src="../game/assets/img/Mario_defeat.webp"></img></a>
+            <div class="rescue-score">your score
+                <div class="value">value</div>
+            </div>
+            <div class="player-time">your time
+                <div class="time">time</div>
+            </div>
+
+            <button class="new-game">New game</button>
+        </div>
+
+      
+    </main>
+
+    <footer>
+        <div class="profile-information">
+            <span class="year-footer">2023</span>
+            <a class="rs-school-footer" href="https://rs.school/js-stage0"><img
+                    src="../game/assets/svg/rs_school_js.svg"></img></a>
+
+            <a class="github-footer" href="https://github.com/PFilippov1/rsschool-cv"><img
+                    src="../game/assets/img/github.png"></img></a>
+        </div>
+    </footer>
+
+    <!-- <script type="module" src="script.js"></script> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
